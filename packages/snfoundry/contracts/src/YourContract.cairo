@@ -114,7 +114,7 @@ mod YourContract {
         }
 
         fn withdraw(ref self: ContractState) {
-            self.ownable.assert_only_owner();
+            // self.ownable.assert_only_owner();
 
             let eth_dispatcher = self
                 ._get_token_dispatcher(contract_address_const::<ETH_CONTRACT_ADDRESS>());

@@ -1,5 +1,10 @@
 ### Starknet Basecamp - Scaffold Stark Session 3
+
 https://www.youtube.com/watch?v=bnopYCw7NLw
+
+## Contract Address
+
+https://sepolia.starkscan.co/contract/0x07cd12473defc1e3934c0159ffb09140444d8fbe6211d206f595bff89c2a18f1#overview
 
 ![Cairo](https://img.shields.io/badge/Cairo-D32F2F?style=for-the-badge&logo=bookstack&logoColor=white)
 ![Starknet](https://img.shields.io/badge/Starknet-0C0C4F?style=for-the-badge&logo=starknet&logoColor=white)
@@ -16,18 +21,21 @@ Welcome to the Basecamp Scaffold Tutorial!!! This project provides a step-by-ste
 ## What You'll Build
 
 This tutorial guides you through building a decentralized application in three progressive steps, with each section designed to take 30-40 minutes in a workshop setting. All changes throughout the tutorial are focused on just two main files:
+
 - Frontend: [`packages/nextjs/app/page.tsx`](https://github.com/Scaffold-Stark/basecamp/blob/base/packages/nextjs/app/page.tsx)
 - Smart Contract: [`packages/snfoundry/contracts/src/yourcontract.cairo`](https://github.com/Scaffold-Stark/basecamp/blob/base/packages/snfoundry/contracts/src/yourcontract.cairo)
 
 The tutorial is divided into the following steps:
 
 0. **Step 0: Scaffold Stark Base** ([branch: step-0](https://github.com/Scaffold-Stark/basecamp/tree/step-0))
+
    - Starts from zero as a fresh clone of Scaffold-Stark
    - At this step lets showcase the basic UI layout and the contract layout with the `debug-ui` tab
    - play around with the `debug-ui` tab, sending transactions and reading values
    - Basic UI layout with zero functionality
 
 1. **Step 1: Basic Hooks Integration** ([branch: step-1](https://github.com/Scaffold-Stark/basecamp/tree/step-1))
+
    - No contract updates needed, time to write UI
    - Changes only in [`page.tsx`](https://github.com/Scaffold-Stark/basecamp/blob/step-1/packages/nextjs/app/page.tsx)
    - Introduces core Scaffold-Stark hooks (`useScaffoldWriteContract`, `useScaffoldReadContract`, `useScaffoldMultiWriteContract`, `useTargetNetwork`, `useDeployedContractInfo`)
@@ -37,6 +45,7 @@ The tutorial is divided into the following steps:
    - [View changes from step-0 to step-1](https://github.com/Scaffold-Stark/basecamp/compare/step-0...step-1)
 
 2. **Step 2: Multi-Token Support** ([branch: step-2](https://github.com/Scaffold-Stark/basecamp/tree/step-2))
+
    - Updates [`YourContract.cairo`](https://github.com/Scaffold-Stark/basecamp/blob/step-2/packages/snfoundry/contracts/src/YourContract.cairo) to support STRK and ETH deposits
    - Enhances [`page.tsx`](https://github.com/Scaffold-Stark/basecamp/blob/step-2/packages/nextjs/app/page.tsx) with token selection and balance display
    - Introduces `useScaffoldEventHistory` hook to fetch filtered events from the contract
@@ -55,11 +64,10 @@ The tutorial is divided into the following steps:
 
 Each step builds upon the previous one, introducing new concepts and features while maintaining a clean, production-ready codebase.
 
-
-
 ## Getting Started
 
 1. **Clone and Setup**
+
    ```bash
    git clone https://github.com/Scaffold-Stark/basecamp.git
    cd basecamp
@@ -68,23 +76,28 @@ Each step builds upon the previous one, introducing new concepts and features wh
    ```
 
 2. **Environment Setup**
+
    ```bash
    # [OPTIONAL] The postinstall should have created the .env file for you, if not, copy the example env file in packages/snfoundry
    cp packages/snfoundry/.env.example packages/snfoundry/.env
    ```
+
    Example of `packages/snfoundry/.env` for Sepolia:
+
    ```bash
    PRIVATE_KEY_SEPOLIA=0xSOMETHING
    RPC_URL_SEPOLIA=https://starknet-sepolia.public.blastapi.io/rpc/v0_7
    ACCOUNT_ADDRESS_SEPOLIA=0xSOMETHING
    ```
+
    > ⚠️ **NEVER commit your `.env` file or expose your private key!**
-   > 
+   >
    > 💡 The `.env` file belongs in the `packages/snfoundry/` directory where your smart contracts live
    >
    > 🔥 Try to use mainnet to teach !!! , use the same format but replace `SEPOLIA` with `MAINNET` in the variable names
 
 3. **Start Development**
+
    ```bash
    # Terminal 1
    yarn deploy --network sepolia
@@ -101,7 +114,6 @@ Each step builds upon the previous one, introducing new concepts and features wh
    - Use the comparison view as a reference if you get stuck
 
 > 💡 **Tip:** Each step's branch contains the complete implementation. If you're stuck, you can always check the final code in the corresponding branch or use the comparison links provided above.
-
 
 ## Updating the Framework
 
@@ -132,6 +144,7 @@ git checkout step-3 && git merge step-2 --no-edit && git push origin step-3
 ```
 
 This process will:
+
 1. Clone the tutorial repository
 2. Update the base framework
 3. Merge changes progressively from each step to the next

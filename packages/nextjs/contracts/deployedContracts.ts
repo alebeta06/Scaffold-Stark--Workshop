@@ -290,7 +290,7 @@ const deployedContracts = {
   sepolia: {
     YourContract: {
       address:
-        "0x3307ade889a5edc9de065b38534f0bf9d57b7dca0c226de3f9de3e9822269ab",
+        "0x7cd12473defc1e3934c0159ffb09140444d8fbe6211d206f595bff89c2a18f1",
       abi: [
         {
           type: "impl",
@@ -567,7 +567,7 @@ const deployedContracts = {
         },
       ],
       classHash:
-        "0x4e881db1286914119f2c900d19ab8fea1811614fdfa86d5f7539f7bc1c83e9c",
+        "0xc40e872a4f8568d7b9a4d83898e8da5e4344b2c4d329a0ff6dc51d215621c2",
     },
   },
 } as const;

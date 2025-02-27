@@ -1,3 +1,9 @@
+### Starknet Basecamp - Scaffold Stark Session 3
+https://www.youtube.com/watch?v=bnopYCw7NLw
+
+![Cairo](https://img.shields.io/badge/Cairo-D32F2F?style=for-the-badge&logo=bookstack&logoColor=white)
+![Starknet](https://img.shields.io/badge/Starknet-0C0C4F?style=for-the-badge&logo=starknet&logoColor=white)
+
 > ⚠️ **ATTENTION: This repository is exclusively for Basecamp Teachers.**
 > If you are a developer looking to learn Starknet, please visit [speedrunstark.com](https://speedrunstark.com)
 

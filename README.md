@@ -1,3 +1,6 @@
+### Starknet Basecamp - Scaffold Stark Session 3
+https://www.youtube.com/watch?v=bnopYCw7NLw
+
 > ⚠️ **ATTENTION: This repository is exclusively for Basecamp Teachers.**
 > If you are a developer looking to learn Starknet, please visit [speedrunstark.com](https://speedrunstark.com)
 
